@@ -3,7 +3,7 @@ require 'test_helper'
 class HomesControllerTest < ActionDispatch::IntegrationTest
 
   def setup
-  	@base = '埼玉県民'
+  	@base = 'SAITAMA'
   end
 
   test "should get top" do
