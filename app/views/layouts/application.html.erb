@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SummuryApp</title>
+    <title><%= yield(:title) %> | 埼玉県民</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header style="background-color: #ff6633; padding-bottom: 15px;">
+      <div class="container">
+        <h2 style="color: white; font-weight: bold; ">サイタマブログ</h2>
+        <ul class="nav nav-tabs nav-justified" style="background-color:orange;">
+          <li class="active"><%= link_to 'HOME', root_path %></li>
+          <li class="active"><%= link_to 'ABOUT', about_path %></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <footer style="background-color: #ff6633; height: 50px;">
+      <div class="container-fluid">
+        <p style="text-align: center; color: white; line-height: 50px;">yuya.kosaka</p>
+      </div>
+    </footer>
   </body>
 </html>
