@@ -15,3 +15,26 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ // forms
+ .forms {
+ 	margin-bottom: 20px;
+ 	.form-control {
+ 		width: 600px;
+ 	}
+ }
+
+#error_expalanation {
+	margin: 15px 0 0 0;
+	ul {
+		list-style: none;
+	}
+	li {
+		color: red;
+		font-weight: bold;
+	}
+}
+
+.alert {
+	margin-top: 10px;
+}
