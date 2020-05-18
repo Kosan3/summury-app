@@ -12,8 +12,8 @@
   <body>
     <header style="background-color: #ff6633; padding-bottom: 15px;">
       <div class="container">
-        <h2 style="color: white; font-weight: bold; ">サイタマブログ</h2>
-        <ul class="nav nav-tabs nav-justified" style="background-color:orange;">
+        <h2><%= link_to 'サイタマブログ', root_path, style: 'color: white; text-decoration: none; font-weight: bold;' %></h2>
+        <ul class="nav nav-tabs nav-justified">
           <li class="active"><%= link_to 'HOME', root_path %></li>
           <li class="active"><%= link_to 'ABOUT', about_path %></li>
         </ul>
