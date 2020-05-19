@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
   	user = User.find_by(name: params[:session][:name])
     if user&.authenticate(params[:session][:password])
       log_in(user)
+      remember user
       redirect_to user_path(user)
     else
       flash.now[:danger] = '名前とパスワードが一致しません'
